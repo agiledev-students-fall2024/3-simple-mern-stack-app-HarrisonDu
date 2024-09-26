@@ -29,7 +29,9 @@ const AboutPage = () => {
       ) : aboutInfo ? (
         <div>
           <h1>{aboutInfo.name}</h1>
-          <p>{aboutInfo.description}</p>
+          <p>{aboutInfo.description[0]}</p><br></br>
+          <p>{aboutInfo.description[1]}</p><br></br>
+          <p>{aboutInfo.description[2]}</p><br></br>
           <img src={aboutInfo.imageUrl} alt={aboutInfo.name} />
         </div>
       ) : (
